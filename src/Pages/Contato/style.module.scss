@@ -1,0 +1,33 @@
+$corPrincipal :#682cef;
+$corSecundaria :#916bea;
+
+.contato{
+    
+  .title{
+    text-align: center;
+    color: $corPrincipal;
+    padding-top:4vh;
+    font-size: 8vh;
+  }
+  &_container{
+    width: 50%;
+    height: 44.8vh;
+    margin: 5vh auto;
+    .subTitle{
+      color:$corPrincipal;
+      font-size: 1.5em;
+    }
+    .contato_item{
+      color: $corSecundaria;
+      margin: 1vh 0 5vh;
+      transition: all .3s ease-in;
+      &:hover{
+        color: rgb(172, 172, 172);
+        transform: scale(1.01);
+      }
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+}

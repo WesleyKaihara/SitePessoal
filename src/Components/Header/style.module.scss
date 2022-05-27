@@ -1,0 +1,44 @@
+$corPrincipal :#682cef;
+$corSecundaria :#916bea;
+
+.header{
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh 0 ;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  a{
+    text-decoration: none;
+  }
+  .Logo{
+    margin-left: 5vh;
+    font-size: 6vh;
+    font-weight: bold;
+    color:$corPrincipal;
+  }
+  nav{
+    margin-right: 5vh;
+    ul{
+      display: flex;
+      gap: 2vw;
+      li{
+        transition: all .5s ease;
+        font-size: 1.1em;
+        a{
+          color: $corPrincipal;
+          transition: all .5s ease;
+        }
+        &:hover{
+          transform: scale(1.2);
+          a{
+            color: $corSecundaria;
+          }
+        }
+      }
+    }
+  }
+}

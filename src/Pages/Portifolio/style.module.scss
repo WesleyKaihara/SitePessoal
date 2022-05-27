@@ -1,0 +1,19 @@
+$corPrincipal :#682cef;
+$corSecundaria :#916bea;
+
+.portifolio{
+  .title{
+    text-align: center;
+    color: $corPrincipal;
+    padding-top:4vh;
+    font-size: 8vh;
+  }
+  &Container{
+    width: 90%;
+    margin: 5vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+    justify-content: space-evenly;
+  }
+}

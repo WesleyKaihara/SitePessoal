@@ -1,0 +1,42 @@
+$corPrincipal :#682cef;
+$corSecundaria :#916bea;
+
+.card{
+  width: 20em;
+  height:50vh;
+  color: #fff;
+  background: #111;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+  margin-bottom: 3vh;
+  transition: all .5s ease;
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 4px $corPrincipal;
+  }
+  img{
+    width: 100%;
+    height: 25vh;
+    border-radius: 15px 15px 0 0 ;
+  }
+  .categoria{
+    margin: 2.5vh 0 1vh;
+    font-size: 1em;
+    font-weight: bold;
+    color: $corPrincipal;
+  }
+  .title{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom:3vh;
+    color: #777;
+  }
+}
+
+a{
+  text-decoration: none;
+}

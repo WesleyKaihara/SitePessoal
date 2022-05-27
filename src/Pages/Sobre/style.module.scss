@@ -1,0 +1,49 @@
+$corPrincipal :#682cef;
+$corSecundaria :#916bea;
+
+.sobre{
+  .title{
+    text-align: center;
+    color: $corPrincipal;
+    padding-top:4vh;
+    font-size: 8vh;
+  }
+  &Container{
+    width: 70%;
+    margin: 5vh auto;
+    display: flex;
+    gap: 8vh;
+    .tecnologias{
+      width: 20vw;
+      right: 5vw;
+      background: #000;
+      padding:3vh;
+      border: 1px solid $corPrincipal;
+      position: absolute;
+      h2{
+        color: $corPrincipal;
+        font-size: 2em;
+      }
+      ul{
+        li{
+          color: $corPrincipal;
+          display: flex;
+          align-items: center;
+          gap: 2vh;
+          margin: 2vh 0 ;
+          font-weight: bold;
+          .icon{
+            font-size: 5vh;
+          }
+          
+        }
+      }
+    }
+    .Perfil{
+      width: 15vw;
+    }
+    .sobreInfo{
+    }
+  }
+  
+}
