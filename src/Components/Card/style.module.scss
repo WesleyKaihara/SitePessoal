@@ -24,16 +24,20 @@ $corSecundaria :#916bea;
     border-radius: 15px 15px 0 0 ;
   }
   .categoria{
-    margin: 2.5vh 0 1vh;
+    margin: 2.5vh 0 3vh;
     font-size: 1em;
     font-weight: bold;
     color: $corPrincipal;
   }
   .title{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     margin-bottom:3vh;
     color: #777;
+  }
+  .desc{
+    line-height: 1.5em;
+    padding: .1vw;
   }
 }
 

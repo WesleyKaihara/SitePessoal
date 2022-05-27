@@ -1,9 +1,11 @@
-import './style.css';
+import style from './style.module.scss';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <section className={style.home}>
+      <div className={style.homeContainer}>
+      </div>
+    </section>
   );
 }
 

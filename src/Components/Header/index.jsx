@@ -13,7 +13,7 @@ export default function Header() {
             <li><a href="/">Home</a></li>
             <li><a href="/sobre">Sobre</a></li>
             <li><a href="/portifolio">Portifólio</a></li>
-            <li><a href="/eventos">Galeria</a></li>
+            <li><a href="/galeria">Galeria</a></li>
             <li><a href="/contato">Contato</a></li>
           </ul>
         </nav>

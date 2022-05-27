@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 import Perfil from '../../images/Perfil.png';
+import Avatar from '../../Components/Avatar';
 
 export default function Sobre() {
   return (
@@ -20,7 +21,7 @@ export default function Sobre() {
             <li><FontAwesomeIcon icon={faDatabase} className={style.icon} /> Mysql</li>
           </ul>
         </div>
-        <img src={Perfil} alt="Perfil" className={style.Perfil} />
+        <Avatar />
         <div className={style.sobreInfo}>
         </div>
       </div>

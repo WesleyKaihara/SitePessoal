@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Contato from './Pages/Contato';
 import Portifolio from './Pages/Portifolio';
 import Sobre from './Pages/Sobre';
+import Galeria from './Pages/Galeria';
 
 export default function Rotas() {
   return (
@@ -13,7 +14,7 @@ export default function Rotas() {
         <Route path="/" element={<Home />} exact />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/portifolio" element={<Portifolio />} />
-        <Route path="/eventos" element={<Home />} />
+        <Route path="/galeria" element={<Galeria />} />
         <Route path="/contato" element={<Contato />} />
       </Routes>
     </Router>
