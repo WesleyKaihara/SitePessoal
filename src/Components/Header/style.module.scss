@@ -42,3 +42,39 @@ $corSecundaria :#916bea;
     }
   }
 }
+
+.Menu{
+  color: $corPrincipal;
+  font-size: 2.5em;
+  margin-right: 5vh;
+  display: none;
+}
+
+.Mostrar{
+  display: flex;
+}
+
+@media(max-width:650px){
+  .header{
+    flex-wrap: wrap;
+    .Menu{
+      display: block;
+    }
+    nav{
+      margin-right: 0;
+      display: none;
+      width: 100%;
+      background: rgb(0, 0, 0);
+      padding: 2vh;
+      border-bottom: 5px solid $corPrincipal;
+      ul{
+        flex-direction: column;
+        li{
+          text-align: center;
+          margin: auto;
+          padding: 1vh;
+        }
+      }
+    }
+  }
+}

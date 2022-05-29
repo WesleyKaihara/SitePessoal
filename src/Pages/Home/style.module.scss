@@ -1,6 +1,65 @@
+$corPrincipal :#682cef;
+$corSecundaria :#76129e;
+
 .home{
   &Container{
     width: 80%;
     margin: 5vh auto;
+    .sobre{
+      height: 55vh;
+      display: flex;
+      justify-content: space-between;
+    }
+    .title{
+      color: $corPrincipal;
+      font-size: 4em;
+      margin-bottom: 3vh;
+    }
+    .text{
+      color: #fff;
+      line-height: 1.5em;
+      font-size:1.2em;
+      width: 70%;
+    }
+    .subtitle{
+      text-align: center;
+      color: $corPrincipal;
+      background: #000;
+      font-size: 2.8em;
+      width: 50%;
+      margin: auto;
+      padding: 2vh;
+      border: 8px double $corPrincipal;
+    }
+    .projetos{
+      width: 100%;
+      &Container{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 8vh 0;
+        flex-wrap: wrap;
+        gap: 3vh;
+      }
+    }
+    .conhecimentos{
+      &Container{
+        margin: 5vh 20%;
+        ul{
+          list-style: disc;
+          li{
+            color: $corPrincipal;
+            font-size: 2em;
+            margin: 1.5vh;
+            p{
+              font-size: .7em;
+              color: $corSecundaria;
+              margin-top: 1vh;
+            }
+          }
+        }
+      }
+    }
   }
 }
+
