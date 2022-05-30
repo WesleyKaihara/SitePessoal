@@ -1,6 +1,17 @@
 $corPrincipal :#682cef;
 $corSecundaria :#76129e;
 
+@keyframes escrevendo {
+  from { width: 0 }
+  to { width: 8ch }
+}
+
+/* The typewriter cursor effect */
+@keyframes cursorAnimado {
+  0% { border-color: transparent }
+  50% { border-color: $corPrincipal }
+}
+
 .home{
   &Container{
     width: 80%;
@@ -11,9 +22,17 @@ $corSecundaria :#76129e;
       justify-content: space-between;
     }
     .title{
+      width: 8ch;
+      white-space: nowrap !important;
+      display: inline-block !important;
       color: $corPrincipal;
       font-size: 4em;
+      border-right: 2.5px solid $corPrincipal;
       margin-bottom: 3vh;
+      overflow: hidden;
+      animation: 
+        escrevendo 2.5s steps(14, end),
+        cursorAnimado .8s infinite;
     }
     .text{
       color: #fff;
@@ -62,4 +81,3 @@ $corSecundaria :#76129e;
     }
   }
 }
-

@@ -10,12 +10,12 @@ $corSecundaria :#916bea;
   text-align: center;
   display: flex;
   justify-content: center;
-  transform-style: preserve-3d;
   margin-bottom: 3vh;
-  transition: all .5s ease;
+  transition: all .5s ease !important;
+  box-shadow: 0 0 10px 4px #000;
   cursor: pointer;
   &:hover{
-    transform: scale(1.01);
+    transform: scale(1.03) !important;
     box-shadow: 0 0 10px 4px $corPrincipal;
   }
   img{

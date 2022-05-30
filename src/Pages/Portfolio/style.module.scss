@@ -1,0 +1,35 @@
+$corPrincipal :#682cef;
+$corSecundaria :#916bea;
+
+.portfolio{
+  .title{
+    text-align: center;
+    color: $corPrincipal;
+    padding-top:4vh;
+    font-size: 8vh;
+  }
+  &Container{
+    width: 90%;
+    margin: 5vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+    justify-content: space-evenly;
+    .newItem{
+      width: 20em;
+      height:50vh;
+      background: #111;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ccc;
+      transition: all .5s ease;
+      cursor: pointer;
+      &:hover{
+      transform: scale(1.01);
+      box-shadow: 0 0 10px 4px $corPrincipal;
+      }
+    }
+  }
+}

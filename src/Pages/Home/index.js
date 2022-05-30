@@ -3,11 +3,19 @@ import style from './style.module.scss';
 import Avatar from '../../Components/Avatar';
 import ProjetosCard from './ProjetosCard';
 
-import CarrinhoCompras from '../../images/Portifolio/CarrinhoCompras.png';
-import ClonePlaystation from '../../images/Portifolio/ClonePlaystation.png';
-import Cotacao from '../../images/Portifolio/LeituraCotacao.png';
+import Aos from 'aos';
+
+import CarrinhoCompras from '../../images/Portfolio/CarrinhoCompras.png';
+import ClonePlaystation from '../../images/Portfolio/ClonePlaystation.png';
+import Cotacao from '../../images/Portfolio/LeituraCotacao.png';
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    Aos.init({ durantion: 4000 });
+  }, []);
+
   return (
     <section className={style.home}>
       <div className={style.homeContainer}>
@@ -20,8 +28,9 @@ function App() {
         </section>
         <section className={style.projetos}>
           <h2 className={style.subtitle}>Projetos</h2>
-          <div className={style.projetosContainer}>
+          <div className={style.projetosContainer} >
             <ProjetosCard
+              data_aos="fade-right"
               src={CarrinhoCompras}
               alt="CarrinhoCompras"
               categoria="Sistema Completo"
@@ -29,6 +38,7 @@ function App() {
               desc="Lista de produtos , CRUDs construidos com mysql e NodeJs"
             />
             <ProjetosCard
+              data_aos="fade-up"
               src={ClonePlaystation}
               alt="Clone Playstation"
               categoria="Clone Interface"
@@ -36,6 +46,7 @@ function App() {
               desc="Página de notícias e produtos Playstation , utilizando ReactJs"
             />
             <ProjetosCard
+              data_aos="fade-left"
               src={Cotacao}
               alt="Cotação Moedas"
               categoria="WebService"
@@ -45,18 +56,22 @@ function App() {
           </div>
         </section>
         <section className={style.conhecimentos}>
-          <h2 className={style.subtitle}>Conhecimentos</h2>
+          <h2 className={style.subtitle}
+            data-aos="zoom-out">Conhecimentos</h2>
           <div className={style.conhecimentosContainer}>
             <ul>
-              <li>
-                <h2>React</h2>
+              <li
+                data-aos="zoom-in">
+                <h2 >React</h2>
                 <p>Criação de Componentes, manipulação de estados , construção de interfaces</p>
               </li>
-              <li>
+              <li
+                data-aos="zoom-in">
                 <h2>NodeJs</h2>
                 <p>Manipulação de Dados(CRUDs), Criptografia de Dados (JWT), Express , Morgan</p>
               </li>
-              <li>
+              <li
+                data-aos="zoom-in">
                 <h2>Mysql</h2>
                 <p>Criação de tabelas, inserção e manipulação de dados, Joins , Functions</p>
               </li>

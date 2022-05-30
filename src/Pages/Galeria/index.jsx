@@ -2,17 +2,17 @@ import style from './style.module.scss';
 
 import Card from '../../Components/Card';
 
-import CloneYoutube from '../../images/Portifolio/CloneYoutube.png';
-import CloneFacebook from '../../images/Portifolio/facebook.png';
-import LandingPageSp from '../../images/Portifolio/LandingPageSp.png';
-import Pokedex from '../../images/Portifolio/Pokedex.png';
+import CloneYoutube from '../../images/Portfolio/CloneYoutube.png';
+import CloneFacebook from '../../images/Portfolio/facebook.png';
+import LandingPageSp from '../../images/Portfolio/LandingPageSp.png';
+import Pokedex from '../../images/Portfolio/Pokedex.png';
 
 
 export default function Galeria() {
   return (
-    <section className={style.portifolio}>
+    <section className={style.portfolio}>
       <h1 className={style.title}>Galeria</h1>
-      <div className={style.portifolioContainer}>
+      <div className={style.portfolioContainer}>
         <Card
           src={CloneYoutube}
           alt="Clone Interface"

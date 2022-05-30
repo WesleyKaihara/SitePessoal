@@ -1,7 +1,8 @@
+
 $corPrincipal :#682cef;
 $corSecundaria :#916bea;
 
-.portifolio{
+.novoProjeto{
   .title{
     text-align: center;
     color: $corPrincipal;
@@ -9,11 +10,16 @@ $corSecundaria :#916bea;
     font-size: 8vh;
   }
   &Container{
-    width: 90%;
+    width: 50%;
     margin: 5vh auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3vh;
-    justify-content: space-evenly;
+    label{
+      color: $corPrincipal;
+      font-size: 1.8em;
+    }
+    input{
+      padding:2vh 2vh;
+      width: 100%;
+      margin: 1.5vh 0;
+    }
   }
 }
