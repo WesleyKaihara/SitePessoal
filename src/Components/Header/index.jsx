@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header>
       <header className={style.header}>
-        <a href="index.html">
+        <a href="/">
           <h1 className={style.Logo}>W3sley </h1>
         </a>
         <FontAwesomeIcon

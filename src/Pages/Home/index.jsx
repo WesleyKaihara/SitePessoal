@@ -10,6 +10,8 @@ import ClonePlaystation from '../../images/Portfolio/ClonePlaystation.png';
 import Cotacao from '../../images/Portfolio/LeituraCotacao.png';
 import { useEffect } from 'react';
 
+import Fundo from '../../images/Raios.png';
+
 function App() {
 
   useEffect(() => {
@@ -18,13 +20,17 @@ function App() {
 
   return (
     <section className={style.home}>
+      <img src={Fundo} alt="Fundo" className={style.fundo} />
       <div className={style.homeContainer}>
         <section className={style.sobre}>
-          <div>
+          <div className={style.sobreInfo}>
             <h1 className={style.title}>Quem sou</h1>
             <p className={style.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium minima vero illum quisquam amet. Amet excepturi culpa voluptas ducimus corporis aut? Molestias hic, sit doloremque ipsam et ullam? Amet, dignissimos.</p>
           </div>
-          <Avatar />
+          <div className={style.AvatarContainer}>
+            <Avatar />
+          </div>
+
         </section>
         <section className={style.projetos}>
           <h2 className={style.subtitle}>Projetos</h2>

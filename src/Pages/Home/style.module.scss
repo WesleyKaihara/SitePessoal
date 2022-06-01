@@ -12,6 +12,13 @@ $corSecundaria :#76129e;
   50% { border-color: $corPrincipal }
 }
 
+.fundo{
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  filter: opacity(0.2) drop-shadow(0 0 0 $corPrincipal);
+}
+
 .home{
   &Container{
     width: 80%;
@@ -41,13 +48,13 @@ $corSecundaria :#76129e;
       width: 70%;
     }
     .subtitle{
+      width:50%;
       text-align: center;
       color: $corPrincipal;
       background: #000;
-      font-size: 2.8em;
-      width: 50%;
+      font-size: 5vh;
       margin: auto;
-      padding: 2vh;
+      padding: 2vw 1vw;
       border: 8px double $corPrincipal;
     }
     .projetos{
@@ -75,6 +82,55 @@ $corSecundaria :#76129e;
               color: $corSecundaria;
               margin-top: 1vh;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:830px){
+  .home{
+    width: 100vw;
+    overflow: hidden;
+  }
+  .sobre{
+    margin-top: 30vh;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    .sobreInfo{
+      width: 100%;
+      text-align: center;
+      .text{
+        width: 100%;
+        margin-bottom: 10vh;
+      }
+    }
+    .AvatarContainer{
+      text-align: center;
+    }
+   
+  }
+  .subtitle{
+    width:max-content !important;
+    font-size: 7vw;
+    padding: 0;
+  }
+  .conhecimentos{
+    &Container{
+      margin: 0 !important;
+      ul{
+        li{
+          font-size: 1.5em;
+          background: #000;
+          margin: 5vh 1.5vh !important;
+          border-radius: 10px;
+          padding: 10px;
+          p{
+            font-size: .6em !important;
+            text-align: left;
           }
         }
       }

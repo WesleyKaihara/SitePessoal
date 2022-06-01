@@ -18,6 +18,7 @@ $corSecundaria :#916bea;
     animation: Fade 5s linear infinite ;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
+    line-height: 9vh;
   }
   &Container{
     width: 90%;
@@ -58,5 +59,33 @@ $corSecundaria :#916bea;
       }
     }
   }
-  
+  .projetos3dContainer{
+    justify-content: center;
+    width: 90%;
+    margin: 7vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+  }
+}
+
+@media(max-width:950px){
+  .sobreContainer{
+    flex-direction: column;
+    .sobreInfo{
+      margin: auto;
+      width: 100%;
+    }
+    .tecnologias{
+      width: 100%;
+      text-align: center;
+      li{
+        justify-content: center;
+      }
+    }
+    .avatarContainer{
+      display: flex;
+      justify-content: center;
+    }
+  }
 }

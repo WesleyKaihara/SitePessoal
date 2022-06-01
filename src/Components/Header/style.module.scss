@@ -61,7 +61,7 @@ $corSecundaria :#916bea;
       display: block;
     }
     nav{
-      margin-right: 0;
+      margin:1vh 0;
       display: none;
       width: 100%;
       background: rgb(0, 0, 0);
@@ -73,6 +73,7 @@ $corSecundaria :#916bea;
           text-align: center;
           margin: auto;
           padding: 1vh;
+          font-size: .7em;
         }
       }
     }
