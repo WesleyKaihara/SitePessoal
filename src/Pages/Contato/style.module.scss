@@ -1,5 +1,5 @@
-$corPrincipal :#682cef;
-$corSecundaria :#916bea;
+$corPrincipal : #1b66ff;
+$corSecundaria :#00cef5;
 
 .contato{
     
@@ -9,10 +9,43 @@ $corSecundaria :#916bea;
     padding-top:4vh;
     font-size: 6vh;
   }
+  .formContainer{
+    width: 60%;
+    label{
+      color: $corPrincipal;
+      font-size: 1.5em;
+    }
+    input,textarea{
+      width: 100%;
+      padding: 1.5vh 2vh;
+      margin: 1.5vh 0 3vh;
+      border-radius: 5px;
+      background: #333;
+      border: 1px solid $corPrincipal;
+    }
+    .btn{
+      background: $corPrincipal;
+      color:#fff;
+      padding: 1.5vh 3vh;
+      border: none;
+      cursor: pointer;
+      transition: all .5s ease;
+      border-radius: 5px;
+      &:hover{
+        background: $corSecundaria;
+      }
+    }
+  }
   &_container{
-    width: 50%;
+    width: 60%;
     height: 50vh;
     margin: 5vh auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    .contatosContent{
+      width: 40%;
+    }
     .subTitle{
       color:$corPrincipal;
       font-size: 1.5em;
@@ -21,6 +54,7 @@ $corSecundaria :#916bea;
       color: $corSecundaria;
       margin: 1vh 0 5vh;
       transition: all .3s ease-in;
+      font-size: 1em;
       &:hover{
         color: rgb(172, 172, 172);
         transform: scale(1.01);
@@ -28,6 +62,25 @@ $corSecundaria :#916bea;
     }
     a{
       text-decoration: none;
+    }
+  }
+}
+
+@media(max-width:950px ){
+  .title{
+    font-size: 2.4em !important;
+  }
+  .contato_container{
+    width: 100% !important;
+    height: auto;
+    flex-direction: column !important;
+    justify-content: center;
+    .formContainer{
+      width: 90%;
+      margin: auto;
+    }
+    .contatosContent{
+     margin: 2vh 5vw;
     }
   }
 }

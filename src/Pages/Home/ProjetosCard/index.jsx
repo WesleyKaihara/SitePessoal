@@ -5,14 +5,14 @@ import { useEffect } from 'react';
 
 export default function ProjetosCard(props) {
 
-  const { src, alt, desc, categoria, title, data_aos } = props;
+  const { src, alt, desc, categoria, title, data_aos, link } = props;
 
   useEffect(() => {
     Aos.init({ durantion: 4000 });
   }, []);
 
   return (
-    <a href='/'>
+    <a href={link} target="_blank" rel="noreferrer">
       <div className={`${style.card}`} data-aos={data_aos}>
         <div className={style.face} >
           <img src={src} alt={alt} />

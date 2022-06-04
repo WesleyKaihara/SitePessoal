@@ -26,8 +26,8 @@ export default function Sobre() {
         </div>
         <div className={style.sobreInfo}>
           <p>Atualmente cursando Tecnologia em Análise e Desenvolvimento de Sistemas pelo Centro Universitário Integrado.<br /><br />
-            Durante os anos de 2018 e 2020 fiz parte de equipes de robótica pelo Colégio SESI , onde tive um grande contato com Mundo da Programação e criação de ideias para resulução de problemas modernos.<br /><br />
-            Em 2021 realizei um BootCamp no Integrado , onde aprendi diversas tecnologias ligadas ao desenvolvimento web como Javascript, ReactJs, Banco de Dados e NodeJs. E atualmente crio pequenos sistemas para aprender novas funcionalidades, linguagens e praticar . Também gosto de criar modelos 3d no software blender, como personagens , construções e principalmente interiores.
+            Durante os anos de 2018 e 2020 fiz parte de equipes de robótica pelo Colégio SESI , onde tive um grande contato com Mundo da Programação e criação de ideias para resolução de problemas modernos.<br /><br />
+            Em 2021 realizei um BootCamp no Integrado , onde aprendi diversas tecnologias ligadas ao desenvolvimento web como Javascript, ReactJs, Banco de Dados e NodeJs. E atualmente crio pequenos sistemas para aprender novas funcionalidades, linguagens e praticar meus conhecimentos. Também gosto de criar modelos 3d no software blender, como personagens , construções e principalmente interiores.
           </p>
         </div>
         <div className={style.tecnologias}>

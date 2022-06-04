@@ -1,5 +1,5 @@
-$corPrincipal :#682cef;
-$corSecundaria :#916bea;
+$corSecundaria :#00cef5;
+$corPrincipal : #1b66ff;
 
 .portfolio{
   .title{
@@ -7,6 +7,16 @@ $corSecundaria :#916bea;
     color: $corPrincipal;
     padding-top:4vh;
     font-size: 8vh;
+  }
+  .buscaProjeto{
+    position: absolute;
+    right: 5vw;
+    top: 12em;
+    width: 20%;
+    padding: 1.5vh 2vh;
+    background: #444;
+    border: 1px solid $corPrincipal;
+    border-radius: 5px;
   }
   &Container{
     width: 90%;
@@ -24,11 +34,11 @@ $corSecundaria :#916bea;
       align-items: center;
       justify-content: center;
       color: #ccc;
-      transition: all .5s ease;
+      transition: all .5s ease !important;
       cursor: pointer;
-      &:hover{
-      transform: scale(1.01);
-      box-shadow: 0 0 10px 4px $corPrincipal;
+        &:hover{
+        transform: scale(1.03) !important;
+        box-shadow: 0 0 10px 4px $corPrincipal;
       }
     }
   }

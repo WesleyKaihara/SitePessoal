@@ -6,30 +6,56 @@ import axios from 'axios';
 
 export default function Portfolio() {
   const [projetos, setProjetos] = useState();
+  const [busca, setBusca] = useState('');
+  const [proejetosFiltrados, setProjetosFiltrados] = useState(projetos);
 
+  // 172.22.214.75
+  const ip = "localhost";
   useEffect(() => {
     Aos.init({ durantion: 2000 });
-    axios.get("http://172.22.214.75/PerfilPessoalServer/verProjetos.php")
+    axios.get(`http://${ip}/PerfilPessoalServer/verProjetos.php`)
       .then(res => {
         setProjetos(res.data);
+        setProjetosFiltrados(res.data)
       });
 
   }, []);
 
+  function pesquisaProjetos(pesquisa) {
+    setBusca(pesquisa);
+
+    const buscaLowerCase = pesquisa.toLowerCase();
+    const item = (projetos.filter(projeto =>
+      projeto.TITULO.toLowerCase().includes(buscaLowerCase)
+    ));
+
+    setProjetosFiltrados(item);
+
+    if (pesquisa === '') {
+      setProjetosFiltrados(projetos);
+    }
+  };
+
   return (
     <section className={style.portfolio}>
       <h1 className={style.title} data-aos="flip-down">Portfólio</h1>
+      <input type="text" placeholder="buscar projeto"
+        className={style.buscaProjeto}
+        value={busca}
+        onChange={(e) => pesquisaProjetos(e.target.value)}
+      />
+
       <div className={style.portfolioContainer}>
         {
-          ((typeof projetos === 'undefined') ? (
+          ((typeof proejetosFiltrados === 'undefined') ? (
             <p>Loading ... </p>
           ) : (
-            projetos.map((projeto) => {
+            proejetosFiltrados.map((projeto) => {
               return (
                 <Card
                   link={projeto.LINK}
                   key={projeto.ID}
-                  src={`http://172.22.214.75/PerfilPessoalServer/getImagem.php?id=${projeto.ID}`}
+                  src={`http://${ip}/PerfilPessoalServer/getImagem.php?id=${projeto.ID}`}
                   alt={projeto.TITULO}
                   categoria={projeto.CATEGORIA}
                   title={projeto.TITULO}

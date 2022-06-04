@@ -1,9 +1,10 @@
-$corPrincipal :#682cef;
-$corSecundaria :#916bea;
-
+$corPrincipal : #1b66ff;
+$corSecundaria :#00cef5;
 .footer{
   background: rgba(0, 0, 0, 0.673);
-  color: $corPrincipal;
   padding: 8vh 5%;
   text-align: center;
+  a{
+    color: $corPrincipal;
+  }
 }

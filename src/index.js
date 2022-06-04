@@ -5,7 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import Rotas from './routes';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-
 import 'aos/dist/aos.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

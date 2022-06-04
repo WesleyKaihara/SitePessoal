@@ -1,5 +1,5 @@
-$corPrincipal :#682cef;
-$corSecundaria :#916bea;
+$corPrincipal : #1b66ff;
+$corSecundaria :#00cef5;
 
 .card{
   width: 20em;
@@ -12,7 +12,8 @@ $corSecundaria :#916bea;
   justify-content: center;
   transform-style: preserve-3d;
   margin-bottom: 3vh;
-  transition: all .5s ease;
+  transition: all .5s ease !important;
+  box-shadow: 0 0 10px 4px #000;
   cursor: pointer;
   &:hover{
     transform: scale(1.01);
