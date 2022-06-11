@@ -1,0 +1,81 @@
+.avatar {
+  display: inline-block; }
+  .avatar .box {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    overflow: hidden; }
+    .avatar .box::before {
+      content: '';
+      position: absolute;
+      inset: -10px 50px;
+      background: linear-gradient(315deg, #1b66ff, #00cef5);
+      transition: all .5s;
+      animation: animate 4s linear infinite; }
+    .avatar .box:hover::before {
+      inset: -20px 0; }
+    .avatar .box:hover .content img {
+      opacity: 0; }
+    .avatar .box::after {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      background: #162052;
+      border-radius: 50%; }
+    .avatar .box .content {
+      position: absolute;
+      inset: 12px;
+      border: 6px solid #070a1c;
+      z-index: 3;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .avatar .box .content img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .5s;
+        pointer-events: none;
+        z-index: 3; }
+      .avatar .box .content h2 {
+        position: relative;
+        font-size: .8em;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase; }
+        .avatar .box .content h2 span {
+          font-weight: 400;
+          font-size: .6em; }
+      .avatar .box .content a {
+        position: relative;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #fff;
+        color: #070a1c;
+        border-radius: 25px;
+        font-weight: 500;
+        font-size: .6em;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        transition: .5s; }
+        .avatar .box .content a:hover {
+          letter-spacing: 0.2em; }
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=style.module.css.map */

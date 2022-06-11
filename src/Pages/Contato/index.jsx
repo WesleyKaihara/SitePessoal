@@ -29,12 +29,12 @@ export default function Contato() {
         <div className={style.formContainer}>
           <form action="http://localhost/PerfilPessoalServer/newMessage.php" method="post">
             <label htmlFor="nome">Seu nome</label>
-            <input type="text" name="nome" id="nome" placeholder="Nome Completo" autoComplete="off" />
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo" autoComplete="off" required />
             <label htmlFor="email">E-mail</label>
-            <input type="email" name="email" placeholder="nome@email.com" autoComplete="off" />
+            <input type="email" name="email" placeholder="nome@email.com" autoComplete="off" required />
             <label htmlFor="mensagem">Mensagem</label>
             <br />
-            <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem aqui"></textarea>
+            <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem aqui" required></textarea>
             <button type="submit" className={style.btn}>Enviar Mensagem</button>
           </form>
         </div>

@@ -9,8 +9,7 @@ export default function Portfolio() {
   const [busca, setBusca] = useState('');
   const [proejetosFiltrados, setProjetosFiltrados] = useState(projetos);
 
-  // 172.22.214.75
-  const ip = "localhost";
+  const ip = "172.22.214.75";
   useEffect(() => {
     Aos.init({ durantion: 2000 });
     axios.get(`http://${ip}/PerfilPessoalServer/verProjetos.php`)
@@ -38,12 +37,16 @@ export default function Portfolio() {
 
   return (
     <section className={style.portfolio}>
-      <h1 className={style.title} data-aos="flip-down">Portfólio</h1>
-      <input type="text" placeholder="buscar projeto"
-        className={style.buscaProjeto}
-        value={busca}
-        onChange={(e) => pesquisaProjetos(e.target.value)}
-      />
+      <header className={style.header}>
+        <div></div>
+        <h1 className={style.title} data-aos="flip-down">Portfólio</h1>
+        <input type="text" placeholder="buscar projeto"
+          className={style.buscaProjeto}
+          value={busca}
+          onChange={(e) => pesquisaProjetos(e.target.value)}
+        />
+      </header>
+
 
       <div className={style.portfolioContainer}>
         {

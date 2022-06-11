@@ -1,0 +1,63 @@
+.header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh 0;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 999; }
+  .header a {
+    text-decoration: none; }
+  .header .Logo {
+    margin-left: 5vh;
+    font-size: 6vh;
+    font-weight: bold;
+    color: #1b66ff; }
+  .header nav {
+    margin-right: 5vh; }
+    .header nav ul {
+      display: flex;
+      gap: 2vw; }
+      .header nav ul li {
+        transition: all .5s ease;
+        font-size: 1.1em; }
+        .header nav ul li a {
+          color: #1b66ff;
+          transition: all .5s ease; }
+        .header nav ul li:hover {
+          transform: scale(1.2); }
+          .header nav ul li:hover a {
+            color: #00cef5; }
+
+.Menu {
+  color: #1b66ff;
+  font-size: 2.5em;
+  margin-right: 5vh;
+  display: none; }
+
+.Mostrar {
+  display: flex; }
+
+@media (max-width: 650px) {
+  .header {
+    flex-wrap: wrap; }
+    .header .Menu {
+      display: block; }
+    .header nav {
+      margin: 1vh 0;
+      display: none;
+      width: 100%;
+      background: black;
+      padding: 2vh;
+      border-bottom: 5px solid #1b66ff; }
+      .header nav ul {
+        flex-direction: column; }
+        .header nav ul li {
+          text-align: center;
+          margin: auto;
+          padding: 1vh;
+          font-size: .7em; } }
+
+/*# sourceMappingURL=style.module.css.map */
